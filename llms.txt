@@ -1,0 +1,19 @@
+# Home Energy Magazine Archive
+
+> Complete archive of Home Energy Magazine — the leading publication for the residential energy efficiency and home performance industry since 1984.
+
+## About
+This archive contains 837 articles and 1,092 blog posts published between 2001 and 2020 covering:
+- Residential energy efficiency and weatherization
+- HVAC systems, heat pumps, and air sealing
+- Building science and home performance contracting
+- Green building, insulation, and solar energy
+- Energy codes, ratings (HERS), and programs (Energy Star, LEED)
+
+## Content
+- Articles: https://homeenergyarchive.org/articles/ — 837 full-length magazine articles (2001–2019)
+- Blog: https://homeenergyarchive.org/blogs/ — 1,092 blog posts by industry experts (2006–2020)
+- Sitemap: https://homeenergyarchive.org/sitemap.xml
+
+## Key Authors
+Jim Gunshinan, Alan Meier, Macie Melendez, Shawna Henderson, Allan Chen, Elisa Wood, Ted Shoemaker, Mike Rogers
