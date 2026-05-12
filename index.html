@@ -116,7 +116,7 @@ function filtered() {
   const q = document.getElementById('search-input').value.toLowerCase().trim();
   const yr = document.getElementById('year-filter').value;
   return currentData().filter(item => {
-    const matchQ = !q || item.title.toLowerCase().includes(q) || (item.excerpt||'').toLowerCase().includes(q);
+    const matchQ = !q || item.title.toLowerCase().includes(q) || (item.search||item.excerpt||'').toLowerCase().includes(q);
     const matchY = !yr || item.year === yr;
     return matchQ && matchY;
   });
