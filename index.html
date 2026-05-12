@@ -3,10 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home Energy Magazine Archive | Residential Energy Efficiency 2001–2020</title>
-<meta name="description" content="Complete archive of Home Energy Magazine — 837 articles and 1,092 blog posts on residential energy efficiency, home performance, weatherization, and green building from 2001 to 2020.">
-<meta property="og:title" content="Home Energy Magazine Archive">
-<meta property="og:description" content="837 articles and 1,092 blog posts on residential energy efficiency from 2001–2020.">
+<title>Home Energy Magazine Archive | Residential Energy Efficiency 2001&ndash;2020</title>
+<meta name="description" content="Complete archive of Home Energy Magazine — 740 articles and 1,092 blog posts on residential energy efficiency, home performance, weatherization, and green building from 2001 to 2020.">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"Home Energy Magazine Archive","description":"Complete archive of Home Energy Magazine covering residential energy efficiency, home performance, and green building from 2001 to 2020.","url":"https://homeenergyarchive.org"}
@@ -14,30 +12,47 @@
 </head>
 <body>
 <header>
-  <div class="eyebrow">Complete Digital Archive</div>
-  <h1>Home Energy</h1>
-  <div class="tagline">The magazine of the home performance industry since 1984</div>
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap">
+      <div class="logo-circle">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="18,4 2,18 34,18" fill="rgba(255,255,255,0.35)"/>
+          <rect x="7" y="18" width="22" height="14" rx="1" fill="rgba(255,255,255,0.25)"/>
+          <text x="11" y="29" font-family="Georgia,serif" font-size="11" font-weight="bold" fill="white">H</text>
+          <text x="21" y="26" font-family="Georgia,serif" font-size="7" fill="white">e</text>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-home">Home</span>
+        <span class="logo-energy">energy</span>
+        <span class="logo-tagline">The magazine of the home performance industry since 1984</span>
+      </div>
+    </a>
+  </div>
 </header>
 <nav>
-  <a href="#articles">Articles</a>
-  <a href="#blogs">Blog</a>
-  <a href="#about">About</a>
+  <div class="nav-inner">
+    <a href="#articles">Articles</a>
+    <a href="#letters">Letters</a>
+    <a href="#blogs">Blog</a>
+    <a href="#about">About</a>
+  </div>
 </nav>
 
 <div class="container">
   <div class="hero">
     <h2>Twenty years of residential energy efficiency, preserved.</h2>
-    <p style="color:var(--mid);font-size:0.9rem;margin-top:0.5rem">837 articles &middot; 1,092 blog posts &middot; 2001&ndash;2020</p>
+    <p class="stats">740 articles &middot; 40 letters to the editor &middot; 1,092 blog posts &middot; 2001&ndash;2020</p>
     <div class="search-wrap">
       <input type="text" id="search-input" placeholder="Search articles and blogs&hellip;" autocomplete="off">
       <button onclick="doSearch()">Search</button>
     </div>
   </div>
 
-  <!-- FILTERS -->
   <div class="filters" id="articles">
-    <div class="tab-btn active" onclick="setTab('articles')">Articles <span class="count-badge" id="art-count">837</span></div>
-    <div class="tab-btn" onclick="setTab('blogs')">Blog <span class="count-badge" id="blog-count">1092</span></div>
+    <div class="tab-btn active" onclick="setTab('articles')">Articles <span class="count-badge" id="art-count">740</span></div>
+    <div class="tab-btn" onclick="setTab('letters')" id="letters-tab">Letters <span class="count-badge" id="let-count">40</span></div>
+    <div class="tab-btn" onclick="setTab('blogs')" id="blogs-tab">Blog <span class="count-badge" id="blog-count">1092</span></div>
     <label style="margin-left:auto">Year:</label>
     <select id="year-filter" onchange="applyFilters()">
       <option value="">All Years</option>
@@ -59,40 +74,43 @@
       <option value="2020">2020</option>
     </select>
   </div>
-
-  <!-- GRID -->
   <div class="article-grid" id="article-grid"></div>
   <div class="pagination" id="pagination"></div>
 </div>
 
-<div class="container" id="about" style="border-top:1px solid #c8bfb0;padding:3rem 0;margin-top:2rem">
-  <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;margin-bottom:1rem">About This Archive</h2>
-  <p style="max-width:660px;color:var(--mid);font-size:0.95rem;line-height:1.8">
-    Home Energy Magazine has been the leading publication for the home performance industry since 1984, covering residential energy efficiency, weatherization, HVAC, building science, and green building. This archive preserves articles and blog posts published from 2001 through 2020.
+<div class="container" id="about" style="border-top:var(--rule);padding:2.5rem 0;margin-top:1rem">
+  <h2 style="font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:0.8rem;color:var(--navy)">About This Archive</h2>
+  <p style="max-width:660px;color:var(--mid);font-size:0.9rem;line-height:1.8">
+    Home Energy Magazine has been the leading publication for the home performance industry since 1984, covering residential energy efficiency, weatherization, HVAC, building science, and green building. This archive preserves articles and blog posts published from 2001 through 2020. Originally published at <a href="https://homeenergy.org" style="color:var(--blue)">HomeEnergy.org</a>.
   </p>
 </div>
 
 <footer>
   <div class="container">
     <p>Home Energy Magazine Archive &middot; Content from 2001&ndash;2020<br>
-    Original publication: <em>Home Energy Magazine</em>, Berkeley, CA &middot; contact@homeenergy.org</p>
+    Originally published at <em>HomeEnergy.org</em> &middot; Berkeley, CA</p>
   </div>
 </footer>
 
 <script>
-let ARTICLES = [], BLOGS = [], currentTab = 'articles', currentPage = 1;
+let ARTICLES = [], LETTERS = [], BLOGS = [], currentTab = 'articles', currentPage = 1;
 const PER_PAGE = 24;
 
 async function loadData() {
-  const [a, b] = await Promise.all([
+  const [a, l, b] = await Promise.all([
     fetch('js/articles.json').then(r => r.json()),
+    fetch('js/letters.json').then(r => r.json()),
     fetch('js/blogs.json').then(r => r.json())
   ]);
-  ARTICLES = a; BLOGS = b;
+  ARTICLES = a; LETTERS = l; BLOGS = b;
   render();
 }
 
-function currentData() { return currentTab === 'articles' ? ARTICLES : BLOGS; }
+function currentData() {
+  if (currentTab === 'articles') return ARTICLES;
+  if (currentTab === 'letters') return LETTERS;
+  return BLOGS;
+}
 
 function filtered() {
   const q = document.getElementById('search-input').value.toLowerCase().trim();
@@ -112,26 +130,25 @@ function render() {
   const slice = items.slice((currentPage-1)*PER_PAGE, currentPage*PER_PAGE);
 
   document.getElementById('art-count').textContent = currentTab === 'articles' ? total : ARTICLES.length;
+  document.getElementById('let-count').textContent = currentTab === 'letters' ? total : LETTERS.length;
   document.getElementById('blog-count').textContent = currentTab === 'blogs' ? total : BLOGS.length;
 
-  const grid = document.getElementById('article-grid');
-  const folder = currentTab === 'articles' ? 'articles' : 'blogs';
-  grid.innerHTML = slice.map(item => `
+  const folder = currentTab === 'blogs' ? 'blogs' : 'articles';
+  document.getElementById('article-grid').innerHTML = slice.map(item => `
     <div class="article-card">
-      <div class="meta">${item.year}${item.posted_by ? ' &middot; ' + item.posted_by : ''}</div>
+      <div class="meta">${item.date_fmt}${item.posted_by && item.posted_by !== 'nan' ? ' &middot; ' + item.posted_by : ''}</div>
       <h3><a href="${folder}/${item.slug}.html">${item.title}</a></h3>
       <p class="excerpt">${item.excerpt || ''}</p>
     </div>`).join('');
 
-  // Pagination
   const pag = document.getElementById('pagination');
   if (pages <= 1) { pag.innerHTML = ''; return; }
   let btns = '';
   if (currentPage > 1) btns += `<button onclick="goPage(${currentPage-1})">&larr;</button>`;
   const start = Math.max(1, currentPage-2), end = Math.min(pages, currentPage+2);
-  if (start > 1) btns += `<button onclick="goPage(1)">1</button>${start > 2 ? '<button disabled>…</button>' : ''}`;
+  if (start > 1) btns += `<button onclick="goPage(1)">1</button>${start > 2 ? '<button disabled>&hellip;</button>' : ''}`;
   for (let i=start; i<=end; i++) btns += `<button class="${i===currentPage?'active':''}" onclick="goPage(${i})">${i}</button>`;
-  if (end < pages) btns += `${end < pages-1 ? '<button disabled>…</button>' : ''}<button onclick="goPage(${pages})">${pages}</button>`;
+  if (end < pages) btns += `${end < pages-1 ? '<button disabled>&hellip;</button>' : ''}<button onclick="goPage(${pages})">${pages}</button>`;
   if (currentPage < pages) btns += `<button onclick="goPage(${currentPage+1})">&rarr;</button>`;
   pag.innerHTML = btns;
 }
@@ -141,11 +158,19 @@ function doSearch() { currentPage = 1; render(); }
 function applyFilters() { currentPage = 1; render(); }
 function setTab(tab) {
   currentTab = tab; currentPage = 1;
-  document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', (i===0&&tab==='articles')||(i===1&&tab==='blogs')));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  const idx = ['articles','letters','blogs'].indexOf(tab);
+  document.querySelectorAll('.tab-btn')[idx].classList.add('active');
   render();
 }
 
-document.getElementById('search-input').addEventListener('keyup', e => { if(e.key==='Enter') doSearch(); else if(e.target.value===''){ currentPage=1; render(); } });
+// Handle hash navigation
+const hash = window.location.hash.replace('#','');
+if (['articles','letters','blogs'].includes(hash)) setTab(hash);
+
+document.getElementById('search-input').addEventListener('keyup', e => {
+  if(e.key==='Enter') doSearch(); else if(!e.target.value) { currentPage=1; render(); }
+});
 
 loadData();
 </script>
