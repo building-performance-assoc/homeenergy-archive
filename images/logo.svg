@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <!-- Circle -->
+  <circle cx="40" cy="40" r="36" fill="none" stroke="url(#grad)" stroke-width="4"/>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8aafc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a7fa5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- House shape -->
+  <rect x="22" y="38" width="36" height="22" rx="1" fill="#7a9e6e" opacity="0.85"/>
+  <polygon points="40,18 18,38 62,38" fill="#7a9e6e" opacity="0.85"/>
+  <!-- He text -->
+  <text x="31" y="53" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="white">H</text>
+  <text x="41" y="49" font-family="Georgia, serif" font-size="9" fill="white">e</text>
+  <!-- Home Energy text -->
+  <text x="90" y="38" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#4a7fa5">Home</text>
+  <text x="90" y="62" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#6b8c3e">energy</text>
+</svg>
