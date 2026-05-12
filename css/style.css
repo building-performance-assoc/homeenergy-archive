@@ -54,6 +54,5 @@ nav a { color: white; text-decoration: none; margin-right: 1.5rem; font-size: 0.
 footer { background: var(--navy); color: var(--lightblue); padding: 2rem 1.5rem; text-align: center; margin-top: 3rem; }
 footer p { font-size: 0.7rem; line-height: 2; }
 .hidden { display: none !important; }
-@media (max-width: 60px) { .article-grid { grid-template-columns: 1fr; } }
-.logo-circle { width: 60px !important; height: 60px !important; overflow: hidden; }
-.logo-circle svg { width: 36px !important; height: 36px !important; }
+@media (max-width: 600px) { .article-grid { grid-template-columns: 1fr; } }
+.logo-wrap img { height: 95px !important; width: auto !important; max-width: 300px !important; }
