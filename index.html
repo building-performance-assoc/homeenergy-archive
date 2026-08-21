@@ -127,7 +127,7 @@ function render() {
   document.getElementById('article-grid').innerHTML = slice.map(item => `
     <div class="article-card">
       <div class="meta">${item.date_fmt}${item.posted_by && item.posted_by !== 'nan' ? ' &middot; ' + item.posted_by : ''}</div>
-      <h3><a href="${folder}/${item.file_type === 'pdf' ? item.slug + '.pdf' : item.slug + '.html'}">${item.title}</a></h3>
+      <h3><a href="${folder}/${item.file_type === 'pdf' ? item.slug + '.pdf' : item.slug + '.html'}" target="_blank" rel="noopener">${item.title}</a></h3>
       <p class="excerpt">${item.excerpt || ''}</p>
     </div>`).join('');
 
