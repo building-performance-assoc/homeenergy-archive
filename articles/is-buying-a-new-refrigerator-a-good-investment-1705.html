@@ -23,33 +23,33 @@
 	Below is a calculator to find out if you can buy a new refrigerator with the energy savings from recycling your old unit. Just fill out the tables below with the information requested. If you don&#39;t know the energy rating of your current refrigerator check out if it is listed in the refrigerator database.</p>
 <p>
 	When you have filled in the information to your satisfaction, click on the &quot;Compute&quot; button below the tables.</p>
-<form name=\"use\">
-	<div align=\"center\">
-		<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">
+<form name="use">
+	<div align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
 			<tbody>
 				<tr>
-					<td width=\"100%\">
+					<td width="100%">
 						<b>Table 1: Local Electric Rate</b>
-						<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" height=\"103\" width=\"100%\">
+						<table border="1" cellpadding="1" cellspacing="1" height="103" width="100%">
 							<tbody>
 								<tr>
-									<td width=\"75%\">
+									<td width="75%">
 										How much do you pay for electricity in cents per kilowatt-hour? (If you don&#39;t know, assume 8 cents/kilowatt-hour.)</td>
-									<td width=\"25%\">
-										<input name=\"elec_rate_cents\" size=\"15\" type=\"text\" value=\"8\" /></td>
+									<td width="25%">
+										<input name="elec_rate_cents" size="15" type="text" value="8" /></td>
 								</tr>
 							</tbody>
 						</table>
 						<p>
 							<b>Table 2: Characteristics of the Refrigerators</b></p>
-						<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" height=\"136\" width=\"100%\">
+						<table border="1" cellpadding="1" cellspacing="1" height="136" width="100%">
 							<tbody>
 								<tr>
-									<td width=\"60%\">
+									<td width="60%">
 										Cost of the New Refrigerator</td>
-									<td width=\"40%\">
+									<td width="40%">
 										<center>
-											<input name=\"cost_new\" size=\"20\" type=\"text\" value=\"450\" /></center>
+											<input name="cost_new" size="20" type="text" value="450" /></center>
 									</td>
 								</tr>
 								<tr>
@@ -57,7 +57,7 @@
 										Energy Rating of the New Refrigerator (in kilowatt-hours)</td>
 									<td>
 										<center>
-											<input name=\"rating_new\" size=\"20\" type=\"text\" value=\"485\" /></center>
+											<input name="rating_new" size="20" type="text" value="485" /></center>
 									</td>
 								</tr>
 								<tr>
@@ -67,7 +67,7 @@
 										<p>
 											&nbsp;</p>
 										<center>
-											<input name=\"rating_old\" size=\"20\" type=\"text\" value=\"1200\" /></center>
+											<input name="rating_old" size="20" type="text" value="1200" /></center>
 									</td>
 								</tr>
 							</tbody>
@@ -77,16 +77,16 @@
 			</tbody>
 		</table>
 	</div>
-	<p align=\"center\">
-		<input name=\"button\" onclick=\"refrig_calculator()\" type=\"button\" value=\"Compute\" /></p>
+	<p align="center">
+		<input name="button" onclick="refrig_calculator()" type="button" value="Compute" /></p>
 </form>
 <p>
 	Now that you have compared the lifetime cost of continuing to use your old refrigerator with a new one, you need to make a decision. If it is cost-effective to purchase a new unit, we hope that you will be a good citizen of the earth and properly recycle your old refrigerator. Don&#39;t put it out in your garage - you&#39;ll save nothing then! Also resist the temptation to sell it on the secondary market. If the energy cost is too great for you to keep it in your kitchen, it will be a worse investment for another family to pay even a small price for your refrigerator on top of its energy cost.</p>
 <p>
 	The calculation above assumes a 4 percent interest rate and five years remaining life on the old refrigerator. If you believe these are incorrect assumptions, click here for a calculator that allows for changes in these assumptions.</p>
-<p class=\"authorbox lightGreenBG\">
+<p class="authorbox lightGreenBG">
 	By <b>James Cavallo</b>, Associate Editor of Home Energy Magazine and Principal at Kouba-Cavallo Associates in Downers Grove, IL</p>
-<script language=\"JavaScript\">
+<script language="JavaScript">
 
     function refrig_calculator() {
 
@@ -112,11 +112,11 @@ var r = new Array ;
 
    var temp1 = r.toString() ;
 
-   var temp2 = \"rc2.htm?\" + temp1 ;
+   var temp2 = "rc2.htm?" + temp1 ;
 
 
 
-   window.open(temp2, \"rc2\", \"width=600,height=500,location=yes,scrollbars\") ;
+   window.open(temp2, "rc2", "width=600,height=500,location=yes,scrollbars") ;
 
      }
 

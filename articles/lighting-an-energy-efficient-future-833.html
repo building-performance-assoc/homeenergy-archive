@@ -39,16 +39,16 @@
 <p>
 	The big difference between compact fluorescents and their incandescent cousins is the amount of energy they use. Compact fluorescents use roughly one-quarter of the electricity that an incandescent bulb will use to give off the same amount of light. Of course the exact difference in light output will depend on how the tubes are shaped, whether it has a cosmetic globe, and a number of other minor things. But cutting the electricity use of a light by anywhere near 75% is a lot of savings. Below is a table of typical compact fluorescent bulbs and their equivalent incandescent bulbs.</p>
 <p>
-	<img align=\"BOTTOM\" height=\"150\" src=\"/images/articles/consumerinfo/cfb.jpg\" width=\"80\" /> <img align=\"BOTTOM\" height=\"100\" src=\"/images/articles/consumerinfo/incan.jpg\" width=\"120\" /></p>
-<table border=\"1\" cellpadding=\"0\" cellspacing=\"1\" width=\"450\">
+	<img align="BOTTOM" height="150" src="/images/articles/consumerinfo/cfb.jpg" width="80" /> <img align="BOTTOM" height="100" src="/images/articles/consumerinfo/incan.jpg" width="120" /></p>
+<table border="1" cellpadding="0" cellspacing="1" width="450">
 	<tbody>
 		<tr>
-			<td width=\"50%\">
+			<td width="50%">
 				<center>
 					Compact<br />
 					Fluorescent Bulbs</center>
 			</td>
-			<td width=\"50%\">
+			<td width="50%">
 				<center>
 					Incandescent<br />
 					Bulbs</center>
@@ -122,28 +122,28 @@
 	One might be tempted to say that 10 years of lighting will cost $65.00 for each 60 watt incandescent bulb and just $25.00 for each 15 watt equivalent compact fluorescent bulb, but that would ignore the notion of discounting future costs. To help you with the discounting calculation, we have created the little calculator below. All you need to do is replace the numbers that appear in the boxes with your own local information. For instance, if you live in the service territory of a utility that charges 13 cents per kilowatt-hour, you should replace the 10 in the first box with 13. If you have a lighting fixture that stays on for 6 hours each day and has five 60 watt incandescent bulbs, then you need to replace the 3 that is in the second box with 6, the 60 in the first box of the second table with 300, and the 15 in the second box of the second table with 75.</p>
 <p>
 	When you have filled in the information to your satisfaction, click on the Compute button below the tables.</p>
-<script language=\"JavaScript\">
+<script language="JavaScript">
     function lighting_calculation() {
 
 var a1 = new String(\'<HTML><HEAD><TITLE>Energy Efficient Lighting: Computation Results</TITLE></HEAD>\') ;
-var a2 = new String(\'<BODY BGCOLOR=\"#ffffff\" background=\"http://www.homeenergy.org/consumerinfo/greenfadebak.jpg\"><center>\') ;
-var a3 = new String(\'<table><Tr><TD><IMG SRC=\"http://www.homeenergy.org/homelight.gif\" WIDTH=67 HEIGHT=44><BR></td><td valign=top><IMG SRC=\"http://www.homeenergy.org/consumerinfo/consumer-info-header1.jpg\" WIDTH=316 HEIGHT=82 USEMAP=\"#hedermap.map\" border=0></td></tr></table>\') ;
-var a4 = new String(\'<MAP NAME=\"hedermap.map\">\') ;
-var a5 = new String(\'<AREA SHAPE=\"RECT\" COORDS=\"0,0,300,52\" HREF=\"http://www.homeenergy.org/consumerinfo\" alt=\"browse the consumer section\">\') ;
-var a6 = new String(\'<AREA SHAPE=\"RECT\" COORDS=\"300,58,316,72\" HREF=\"http://www.homeenergy.org\" alt=\"visit our homepage\">\') ;
-var a7 = new String(\'<AREA SHAPE=\"RECT\" COORDS=\"299,72,316,82\" HREF=\"mailto:contact@homeenergy.org\" alt=\"contact homeenergy\"></MAP>\') ;
+var a2 = new String(\'<BODY BGCOLOR="#ffffff" background="http://www.homeenergy.org/consumerinfo/greenfadebak.jpg"><center>\') ;
+var a3 = new String(\'<table><Tr><TD><IMG SRC="http://www.homeenergy.org/homelight.gif" WIDTH=67 HEIGHT=44><BR></td><td valign=top><IMG SRC="http://www.homeenergy.org/consumerinfo/consumer-info-header1.jpg" WIDTH=316 HEIGHT=82 USEMAP="#hedermap.map" border=0></td></tr></table>\') ;
+var a4 = new String(\'<MAP NAME="hedermap.map">\') ;
+var a5 = new String(\'<AREA SHAPE="RECT" COORDS="0,0,300,52" HREF="http://www.homeenergy.org/consumerinfo" alt="browse the consumer section">\') ;
+var a6 = new String(\'<AREA SHAPE="RECT" COORDS="300,58,316,72" HREF="http://www.homeenergy.org" alt="visit our homepage">\') ;
+var a7 = new String(\'<AREA SHAPE="RECT" COORDS="299,72,316,82" HREF="mailto:contact@homeenergy.org" alt="contact homeenergy"></MAP>\') ;
 
-var z1 = new String(\'<HR ALIGN=LEFT><H3><A HREF=\"index.html\">\') ;
+var z1 = new String(\'<HR ALIGN=LEFT><H3><A HREF="index.html">\') ;
 var z2 = new String(\'Return to the <i>Lighting: An Energy Efficient Future</i> page</A></h3><p>\') ;
 var z3 = new String(\'<h5>For additional information, send e-mail to: \') ;
-var z4 = new String(\'<A HREF=\"mailto: contact@HomeEnergy.org\">contact@HomeEnergy.org</A></h5>\') ;
+var z4 = new String(\'<A HREF="mailto: contact@HomeEnergy.org">contact@HomeEnergy.org</A></h5>\') ;
 var z5 = new String(\'<h6>This page was last updated on September 13, 2001.</h6></BODY></HTML>\') ;
 
-var m1 = \"<h4>The present value of the cost of using the incandescents is $\" ; var br = \"<br>\" ;
-var m2 = \"<h4>The present value of the cost of using the compact fluorescents is $\" ;
-var m3 = \"<h4>The net benefit of using compact fluorescent bulbs is $\" ;
+var m1 = "<h4>The present value of the cost of using the incandescents is $" ; var br = "<br>" ;
+var m2 = "<h4>The present value of the cost of using the compact fluorescents is $" ;
+var m3 = "<h4>The net benefit of using compact fluorescent bulbs is $" ;
 
-var m9 = \"<p>\" ;
+var m9 = "<p>" ;
 
 var interest_rate = document.use.interest_rate_percent.value/100 ;
 var elec_rate = document.use.elec_rate_cents.value/100 ;
@@ -173,49 +173,49 @@ var l3 = Math.round(100 * (l1 - l2))/100 ;
    document.close() ;
     }
     </script>
-<form name=\"use\">
-	<div align=\"center\">
-		<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">
+<form name="use">
+	<div align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
 			<tbody>
 				<tr>
-					<td width=\"100%\">
+					<td width="100%">
 						<b>Table 1</b>
-						<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" height=\"103\" width=\"100%\">
+						<table border="1" cellpadding="1" cellspacing="1" height="103" width="100%">
 							<tbody>
 								<tr>
-									<td width=\"75%\">
+									<td width="75%">
 										How much do you pay for electricity in cents per kilowatt-hour? (If you don&#39;t know, assume 10 cents/kilowatt-hour.)</td>
-									<td width=\"25%\">
-										&nbsp; <input name=\"elec_rate_cents\" size=\"15\" type=\"text\" value=\"10\" /></td>
+									<td width="25%">
+										&nbsp; <input name="elec_rate_cents" size="15" type="text" value="10" /></td>
 								</tr>
 								<tr>
 									<td>
 										How many hours per day on average do you leave this bulb on each day? (If you are not sure, assume 3 hours.)</td>
 									<td>
-										&nbsp; <input name=\"ave_daily_usage\" size=\"15\" type=\"text\" value=\"3\" /></td>
+										&nbsp; <input name="ave_daily_usage" size="15" type="text" value="3" /></td>
 								</tr>
 								<tr>
 									<td>
 										What is the interest rate that you receive for your savings? (Many banks pay about 4 percent interest.)</td>
 									<td>
-										&nbsp; <input name=\"interest_rate_percent\" size=\"15\" type=\"text\" value=\"4\" /></td>
+										&nbsp; <input name="interest_rate_percent" size="15" type="text" value="4" /></td>
 								</tr>
 							</tbody>
 						</table>
 						<p>
 							<b>Table 2</b></p>
-						<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" height=\"136\" width=\"100%\">
+						<table border="1" cellpadding="1" cellspacing="1" height="136" width="100%">
 							<tbody>
 								<tr>
-									<td height=\"30\" width=\"38%\">
+									<td height="30" width="38%">
 										Characteristic of the Bulb</td>
-									<td width=\"29%\">
+									<td width="29%">
 										<p>
 											&nbsp;</p>
 										<center>
 											Incandescent Bulbs</center>
 									</td>
-									<td width=\"33%\">
+									<td width="33%">
 										<p>
 											&nbsp;</p>
 										<center>
@@ -223,51 +223,51 @@ var l3 = Math.round(100 * (l1 - l2))/100 ;
 									</td>
 								</tr>
 								<tr>
-									<td height=\"38\">
+									<td height="38">
 										Energy Usage of the bulb (in watts)</td>
 									<td>
 										<p>
 											&nbsp;</p>
 										<center>
-											&nbsp; <input name=\"watts_incan\" size=\"20\" type=\"text\" value=\"60\" /></center>
+											&nbsp; <input name="watts_incan" size="20" type="text" value="60" /></center>
 									</td>
 									<td>
 										<p>
 											&nbsp;</p>
 										<center>
-											&nbsp; <input name=\"watts_cfb\" size=\"20\" type=\"text\" value=\"15\" /></center>
+											&nbsp; <input name="watts_cfb" size="20" type="text" value="15" /></center>
 									</td>
 								</tr>
 								<tr>
-									<td height=\"30\">
+									<td height="30">
 										Expected life of bulb (in hours)</td>
 									<td>
 										<p>
 											&nbsp;</p>
 										<center>
-											&nbsp; <input name=\"incan_life\" size=\"20\" type=\"text\" value=\"1000\" /></center>
+											&nbsp; <input name="incan_life" size="20" type="text" value="1000" /></center>
 									</td>
 									<td>
 										<p>
 											&nbsp;</p>
 										<center>
-											&nbsp; <input name=\"cfb_life\" size=\"20\" type=\"text\" value=\"10000\" /></center>
+											&nbsp; <input name="cfb_life" size="20" type="text" value="10000" /></center>
 									</td>
 								</tr>
 								<tr>
-									<td height=\"30\">
+									<td height="30">
 										Cost of bulb</td>
 									<td>
 										<p>
 											&nbsp;</p>
 										<center>
-											&nbsp; <input name=\"cost_incan\" size=\"20\" type=\"text\" value=\".5\" /></center>
+											&nbsp; <input name="cost_incan" size="20" type="text" value=".5" /></center>
 									</td>
 									<td>
 										<p>
 											&nbsp;</p>
 										<center>
-											&nbsp; <input name=\"cost_cfb\" size=\"20\" type=\"text\" value=\"10\" /></center>
+											&nbsp; <input name="cost_cfb" size="20" type="text" value="10" /></center>
 									</td>
 								</tr>
 							</tbody>
@@ -277,8 +277,8 @@ var l3 = Math.round(100 * (l1 - l2))/100 ;
 			</tbody>
 		</table>
 	</div>
-	<p align=\"center\">
-		<input name=\"button\" onclick=\"lighting_calculation()\" type=\"button\" value=\"Compute\" /></p>
+	<p align="center">
+		<input name="button" onclick="lighting_calculation()" type="button" value="Compute" /></p>
 </form>
 <p>
 	Now that you have compared the lifetime cost of continuing to use your incandescent bulbs to the cost of switching to compact fluorescent bulbs, you may wonder which lights to change out first. Certainly you want to replace the lights that are used for the greatest number of hours each day --not the lights that are in your closets or crawlspaces and are rarely turned on. Look around your house. You probably have the lights on in your kitchen and TV room the longest.</p>
@@ -287,50 +287,50 @@ var l3 = Math.round(100 * (l1 - l2))/100 ;
 <p>
 	Here are some links to more information on lighting and some places to purchase energy efficient bulbs and lamps.</p>
 <p>
-	<a href=\"http://www.energystar.gov/products/cfls/\">EPA&#39;s Energy Star Lighting web pages</a></p>
+	<a href="http://www.energystar.gov/products/cfls/">EPA&#39;s Energy Star Lighting web pages</a></p>
 <p>
-	<a href=\"http://www.eren.doe.gov/erec/factsheets/eelight.html\">Dept. of Energy information on energy efficient lighting</a></p>
+	<a href="http://www.eren.doe.gov/erec/factsheets/eelight.html">Dept. of Energy information on energy efficient lighting</a></p>
 <p>
-	<a href=\"http://solstice.crest.org/efficiency/index.shtml#lighting\">Lighting links from the Center for Renewable Energy and Sustainable Technologies</a></p>
+	<a href="http://solstice.crest.org/efficiency/index.shtml#lighting">Lighting links from the Center for Renewable Energy and Sustainable Technologies</a></p>
 <p>
-	<a href=\"http://www.ase.org/powersmart/docs/fbulbs.html\">An Enlightening Comparison from the Alliance to Save Energy</a></p>
+	<a href="http://www.ase.org/powersmart/docs/fbulbs.html">An Enlightening Comparison from the Alliance to Save Energy</a></p>
 <p>
-	<a href=\"http://www.aceee.org/consumerguide/index.htm\">Information on energy efficient lighting and other home energy conservation opportunities from the American Council for an Energy Efficient Economy</a></p>
+	<a href="http://www.aceee.org/consumerguide/index.htm">Information on energy efficient lighting and other home energy conservation opportunities from the American Council for an Energy Efficient Economy</a></p>
 <p>
-	<a href=\"http://homeenergy.org/archive/hem.dis.anl.gov/eehem/94/941116.html\">Article - Consumer Guide: Energy Efficient Lighting for the Home</a></p>
+	<a href="http://homeenergy.org/archive/hem.dis.anl.gov/eehem/94/941116.html">Article - Consumer Guide: Energy Efficient Lighting for the Home</a></p>
 <p>
-	<a href=\"http://homeenergy.org/archive/hem.dis.anl.gov/eehem/97/970109.html\">Article - Shedding Light on Home Lighting Use</a></p>
+	<a href="http://homeenergy.org/archive/hem.dis.anl.gov/eehem/97/970109.html">Article - Shedding Light on Home Lighting Use</a></p>
 <p>
-	<a href=\"http://homeenergy.org/archive/hem.dis.anl.gov/eehem/98/981109.html\">Article - History in a New Light: The House of Seven Gables Lighting Retrofit</a></p>
+	<a href="http://homeenergy.org/archive/hem.dis.anl.gov/eehem/98/981109.html">Article - History in a New Light: The House of Seven Gables Lighting Retrofit</a></p>
 <p>
-	<a href=\"http://homeenergy.org/archive/hem.dis.anl.gov/eehem/94/941109.html\">Article - Lighting Makeovers: The Best is Not Always the Brightest</a></p>
+	<a href="http://homeenergy.org/archive/hem.dis.anl.gov/eehem/94/941109.html">Article - Lighting Makeovers: The Best is Not Always the Brightest</a></p>
 <p>
-	<a href=\"http://homeenergy.org/archive/hem.dis.anl.gov/eehem/95/950911.html\">Article - Bright Prospects for Lighting Retrofits</a></p>
+	<a href="http://homeenergy.org/archive/hem.dis.anl.gov/eehem/95/950911.html">Article - Bright Prospects for Lighting Retrofits</a></p>
 <p>
-	<a href=\"http://homeenergy.org/archive/hem.dis.anl.gov/eehem/94/941109.html\">Article - Steps to Successful Lighting Programs</a></p>
+	<a href="http://homeenergy.org/archive/hem.dis.anl.gov/eehem/94/941109.html">Article - Steps to Successful Lighting Programs</a></p>
 <p>
-	<a href=\"http://www.lighting.philips.com/\">Philips Lighting Company, a supplier of compact fluorescents</a></p>
+	<a href="http://www.lighting.philips.com/">Philips Lighting Company, a supplier of compact fluorescents</a></p>
 <p>
-	<a href=\"http://www.duro-test.com/\">Duro-Test Lighting, a supplier of compact fluorescents</a></p>
+	<a href="http://www.duro-test.com/">Duro-Test Lighting, a supplier of compact fluorescents</a></p>
 <p>
-	<a href=\"http://www.ge.com/lighting/\">GE Lighting, a supplier of compact fluorescents</a></p>
+	<a href="http://www.ge.com/lighting/">GE Lighting, a supplier of compact fluorescents</a></p>
 <p>
-	<a href=\"http://www.lightsofamerica.com/\">Lights of America, a supplier of compact fluorescents</a></p>
+	<a href="http://www.lightsofamerica.com/">Lights of America, a supplier of compact fluorescents</a></p>
 <p>
-	<a href=\"http://www.sylvania.com/\">Osram Sylvania, Inc., a supplier of compact fluorescents</a></p>
+	<a href="http://www.sylvania.com/">Osram Sylvania, Inc., a supplier of compact fluorescents</a></p>
 <p>
-	<a href=\"http://www.panasonic.com/\">Panasonic Lighting, a supplier of compact fluorescents</a></p>
+	<a href="http://www.panasonic.com/">Panasonic Lighting, a supplier of compact fluorescents</a></p>
 <p>
-	<a href=\"http://www.realgoods.com/\">Real Goods, a supplier of compact fluorescents</a></p>
+	<a href="http://www.realgoods.com/">Real Goods, a supplier of compact fluorescents</a></p>
 <p>
-	<a href=\"http://www.sunpkco.com/\">Sunpark Electronics Corp., a supplier of compact fluorescents</a></p>
+	<a href="http://www.sunpkco.com/">Sunpark Electronics Corp., a supplier of compact fluorescents</a></p>
 <p>
-	<a href=\"http://www.betterbulbsdirect.com/\">BetterBulbsDirect.Com, a supplier of compact fluorescents</a></p>
+	<a href="http://www.betterbulbsdirect.com/">BetterBulbsDirect.Com, a supplier of compact fluorescents</a></p>
 <p>
-	<a href=\"http://www.fullspectrumsolutions.com/compact.htm\">ParaLite Electronic, a supplier of compact fluorescents</a></p>
+	<a href="http://www.fullspectrumsolutions.com/compact.htm">ParaLite Electronic, a supplier of compact fluorescents</a></p>
 <p>
 	This list of suppliers is not complete. I regret leaving out any supplier. Please let me know of any web sites that I have missed and I will include them at the next update.</p>
-<p class=\"authorbox lightGreenBG\">
+<p class="authorbox lightGreenBG">
 	By <b>James Cavallo</b>, Associate Editor of Home Energy Magazine and Principal at Kouba-Cavallo Associates in Downers Grove, IL</p>
 </div>
 </div>
